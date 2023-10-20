@@ -118,8 +118,6 @@ a {
   }
 }
 .header__img-wrapper {
-  width: 738px;
-  height: 330px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -525,16 +523,8 @@ a {
 }
 
 .post-card__img {
-  width: 226px;
-  height: 226px;
   border-radius: 18px;
   margin-bottom: 12px;
-}
-@media screen and (max-width: 767px) {
-  .post-card__img {
-    width: 280px;
-    height: 280px;
-  }
 }
 .post-card__date {
   color: #777;
