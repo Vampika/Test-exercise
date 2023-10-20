@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script> $(document).ready(function(){ $('.bxslider').bxSlider(); }); </script>
+    <title>Путь JavaScript</title>
+</head>
+<body>
+    <header class="header">        
+        <div class="container">
+            <div class="header__top-part">
+                <img src="/img/logo.svg" alt="JSCOURSES" class="logo header__logo"/>
+                <nav class="header__navigation navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a>Статьи</a><img src="/img/bird.svg">
+                            <ul class="navigation__secondary">
+                                <li><a>Статья 1</a></li>
+                                <li><a>Статья 2</a></li>
+                                <li><a>Статья 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item"><a>Курсы</a><img src="/img/bird.svg">
+                            <ul class="navigation__secondary">
+                                <li><a>JavaScript Pro</a></li>
+                                <li><a>JavaScript для новичков</a></li>
+                                <li><a>JavaScript ниндзя</a></li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item"><a>Новости</a></li>
+                        <li class="navigation__item"><a>О нас</a></li>
+                    </ul>
+                </nav>
+                <div class="header__button">
+                    <a href="#" class="button" id="startStudy">Начать учиться</a>
+                </div>                    
+                <label class="mobile__button">
+                    <input type="checkbox" class="mobile__toggle" name="mobile-toggle">
+                    <span class="mobile__icon"></span>
+                </label>
+            </div>        
+            <div class="header__main-part">
+                <h1 class="header__main-title main-title">Путь JavaScript</h1>
+                <div class="header__content">
+                    <div class="header__img-wrapper">
+                        <picture>
+                            <source srcset="/img/header-img.webp" type="image/webp">
+                            <source srcset="/img/header-img.png" type="image/jpg">
+                            <img src="/img/header-img.png" loading="lazy" decoding="async" class="header__img">
+                        </picture>                    
+                        <img class="header__triangle" src="/img/Triangle-white.svg">
+                        <div class="header__date"><span class="date__number">12</span><img class="date__triangle" src="/img/Triangle.svg"><p>апреля</p></div>
+                    
+                </div>                
+                <p class="header__text">Можно выделить три основных направления для прогресса JavaScript Middle...</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal-background hidden">
+            <div class="modal">
+                <img src="/img/close.svg" class="modal__close" id="modal-close-button">
+                <div class="modal__title title">Начать учиться</div>
+                <p class="modal__text">Оставьте заявку и наш менеджер вам перезвонит.</p>
+                <form class="modal__form">
+                    <label class="modal__label input-label">
+                        <input type="text" class="modal__input input input_big" id="name" required>
+                        <span>Имя</span>
+                    </label>
+                    <label class="modal__label input-label">
+                        <input type="text" class="modal__input input input_big" id="email" required>
+                        <span>Email</span>
+                    </label>
+                    <div class="modal__button">
+                        <a href="#" class="button button_big">Отправить</a>
+                    </div>
+                </form>
+                <p class="modal__text_small">Нажимая кнопку «Отправить», вы соглашаетесь с <a href="#!">политикой конфиденциальности</a></p>
+            </div>
+        </div>
+    </header>
+    <section class="quote-section">
+        <div class="container">
+            <hr class="quote-section__hr">
+            <h2 class="quote-section__title title">Серверный JavaScript</h2>
+            <div class="quote-section__quote quote">
+                <img src="/img/quotation-mark.svg" class="quote__mark">
+                <div class="quote__text-wrapper">
+                    <p class="quote__text">Разработчики и клиенты часто неправильно понимают, что такое система. Они видят графический интерфейс и думают, что он и есть система. Они определяют систему в терминах графического интерфейса и считают, что должны сразу начать работу с графическим интерфейсом. Они не понимают важнейшего принципа: ввод/вывод не важен.</p>
+                    <span class="quote__author">— Р. Мартин</span>
+                </div>
+            </div>
+        </div>        
+    </section>
+    <section class="advertising-section">
+        <div class="container">
+            <picture>
+                <source srcset="/img/advertising-img.webp" type="image/webp">
+                <source srcset="/img/advertising-img.png" type="image/jpg">
+                <img src="/img/advertising-img.png" loading="lazy" decoding="async" class="header__img">
+            </picture>
+            <p clas="advertising-section__text">Реклама на <a href="#!">blabla.com</a></p>
+        </div>
+    </section>
+    <section class="conclusion-section">
+        <div class="container">
+            <h2 class="conclusion-section__title title">Заключение</h2>
+            <p class="conclusion-section__text">Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство диссонирует лирический субъект. Абстрактное высказывание пространственно просветляет деструктивный символ. Ямб, несмотря на то, что все эти характерологические черты отсылают не к единому образу нарратора, интегрирует мифопоэтический хронотоп. Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.</p>
+        </div>
+    </section>
+    <section class="review-section">
+        <div class="container">
+            <h2 class="review-section__title title title_big">Что вы думаете об этой книге?</h2>
+            <form class="review-form">
+                <p class="review-form__text">Оцените статью</p>
+                <div class="review-form__stars stars">
+                    <input type="radio" id="star-1" name="rating" value="1"><label for="star-1" title="Оценка «1»"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9653 19.4946C12.674 19.3415 12.326 19.3415 12.0347 19.4946L6.35837 22.4788C5.62474 22.8645 4.76731 22.2416 4.90742 21.4247L5.9915 15.104C6.04713 14.7796 5.93959 14.4486 5.7039 14.2189L1.11169 9.7426C0.51817 9.16406 0.845679 8.15609 1.6659 8.0369L8.01218 7.11473C8.33789 7.06741 8.61946 6.86284 8.76512 6.56769L11.6033 0.816987C11.9701 0.0737408 13.0299 0.0737399 13.3967 0.816986L16.2349 6.56769C16.3805 6.86284 16.6621 7.06741 16.9878 7.11473L23.3341 8.0369C24.1543 8.15609 24.4818 9.16406 23.8883 9.7426L19.2961 14.2189C19.0604 14.4486 18.9529 14.7796 19.0085 15.104L20.0926 21.4247C20.2327 22.2416 19.3753 22.8645 18.6416 22.4788L12.9653 19.4946Z"/>
+                        </svg></label>
+                    <input type="radio" id="star-2" name="rating" value="2">
+                    <label for="star-2" title="Оценка «2»"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9653 19.4946C12.674 19.3415 12.326 19.3415 12.0347 19.4946L6.35837 22.4788C5.62474 22.8645 4.76731 22.2416 4.90742 21.4247L5.9915 15.104C6.04713 14.7796 5.93959 14.4486 5.7039 14.2189L1.11169 9.7426C0.51817 9.16406 0.845679 8.15609 1.6659 8.0369L8.01218 7.11473C8.33789 7.06741 8.61946 6.86284 8.76512 6.56769L11.6033 0.816987C11.9701 0.0737408 13.0299 0.0737399 13.3967 0.816986L16.2349 6.56769C16.3805 6.86284 16.6621 7.06741 16.9878 7.11473L23.3341 8.0369C24.1543 8.15609 24.4818 9.16406 23.8883 9.7426L19.2961 14.2189C19.0604 14.4486 18.9529 14.7796 19.0085 15.104L20.0926 21.4247C20.2327 22.2416 19.3753 22.8645 18.6416 22.4788L12.9653 19.4946Z"/>
+                        </svg></label>
+                    <input type="radio" id="star-3" name="rating" value="3">
+                    <label for="star-3" title="Оценка «3»"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9653 19.4946C12.674 19.3415 12.326 19.3415 12.0347 19.4946L6.35837 22.4788C5.62474 22.8645 4.76731 22.2416 4.90742 21.4247L5.9915 15.104C6.04713 14.7796 5.93959 14.4486 5.7039 14.2189L1.11169 9.7426C0.51817 9.16406 0.845679 8.15609 1.6659 8.0369L8.01218 7.11473C8.33789 7.06741 8.61946 6.86284 8.76512 6.56769L11.6033 0.816987C11.9701 0.0737408 13.0299 0.0737399 13.3967 0.816986L16.2349 6.56769C16.3805 6.86284 16.6621 7.06741 16.9878 7.11473L23.3341 8.0369C24.1543 8.15609 24.4818 9.16406 23.8883 9.7426L19.2961 14.2189C19.0604 14.4486 18.9529 14.7796 19.0085 15.104L20.0926 21.4247C20.2327 22.2416 19.3753 22.8645 18.6416 22.4788L12.9653 19.4946Z"/>
+                        </svg></label>
+                    <input type="radio" id="star-4" name="rating" value="4">
+                    <label for="star-4" title="Оценка «4»"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9653 19.4946C12.674 19.3415 12.326 19.3415 12.0347 19.4946L6.35837 22.4788C5.62474 22.8645 4.76731 22.2416 4.90742 21.4247L5.9915 15.104C6.04713 14.7796 5.93959 14.4486 5.7039 14.2189L1.11169 9.7426C0.51817 9.16406 0.845679 8.15609 1.6659 8.0369L8.01218 7.11473C8.33789 7.06741 8.61946 6.86284 8.76512 6.56769L11.6033 0.816987C11.9701 0.0737408 13.0299 0.0737399 13.3967 0.816986L16.2349 6.56769C16.3805 6.86284 16.6621 7.06741 16.9878 7.11473L23.3341 8.0369C24.1543 8.15609 24.4818 9.16406 23.8883 9.7426L19.2961 14.2189C19.0604 14.4486 18.9529 14.7796 19.0085 15.104L20.0926 21.4247C20.2327 22.2416 19.3753 22.8645 18.6416 22.4788L12.9653 19.4946Z"/>
+                        </svg></label>
+                    <input type="radio" id="star-5" name="rating" value="5">
+                    <label for="star-5" title="Оценка «5»"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9653 19.4946C12.674 19.3415 12.326 19.3415 12.0347 19.4946L6.35837 22.4788C5.62474 22.8645 4.76731 22.2416 4.90742 21.4247L5.9915 15.104C6.04713 14.7796 5.93959 14.4486 5.7039 14.2189L1.11169 9.7426C0.51817 9.16406 0.845679 8.15609 1.6659 8.0369L8.01218 7.11473C8.33789 7.06741 8.61946 6.86284 8.76512 6.56769L11.6033 0.816987C11.9701 0.0737408 13.0299 0.0737399 13.3967 0.816986L16.2349 6.56769C16.3805 6.86284 16.6621 7.06741 16.9878 7.11473L23.3341 8.0369C24.1543 8.15609 24.4818 9.16406 23.8883 9.7426L19.2961 14.2189C19.0604 14.4486 18.9529 14.7796 19.0085 15.104L20.0926 21.4247C20.2327 22.2416 19.3753 22.8645 18.6416 22.4788L12.9653 19.4946Z"/>
+                        </svg></label>
+                </div>
+                <p class="review-form__text">Добавить комментарий к книге</p>
+                <div class="review-form__row">
+                    <label class="review-form__label input-label">
+                        <input type="text" class="review-form__input input" id="name" required>
+                        <span>Имя</span>
+                    </label>
+                    <label class="review-form__label input-label">
+                        <input type="text" class="review-form__input input" id="email" required>
+                        <span>Email</span>
+                    </label>
+                    <div class="review-form__select-wrapper select"><img src="/img/bird.svg" class="select__bird">
+                        <button class="select__button">Выберите книгу</button>
+                        <ul class="select__list hidden">
+                            <li class="select__item" data-value="JavaScript ниндзя"><i></i>JavaScript ниндзя</li>
+                            <li class="select__item" data-value="Pragmatic Guide to JavaScript"><i></i>Pragmatic Guide to JavaScript</li>
+                            <li class="select__item" data-value="Pro JavaScript Techniques"><i></i>Pro JavaScript Techniques</li>
+                            <li class="select__item" data-value="Выразительный JavaScript"><i></i>Выразительный JavaScript</li>
+                        </ul>
+                        <input type="text" name="select-input" value="" class="hidden select__input">
+                    </div>
+                </div>
+                <label class="review-form__label input-label">
+                    <textarea class="review-form__textarea" id="name" required></textarea>
+                    <span>Ваш отзыв</span>
+                </label>                
+                <div class="review-form__button">
+                    <a href="#" class="button">Отправить</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="another-posts-section">
+        <div class="container">
+            <h2 class="another-posts-section__title title title_big">Похожие посты</h2>
+            <div class="another-posts-section__row">
+                <div class="post-card">
+                    <picture>
+                        <source srcset="/img/post-1.webp" type="image/webp">
+                        <source srcset="/img/post-1.png" type="image/jpg">
+                        <img src="/img/post-1.png" loading="lazy" decoding="async" class="post-card__img">
+                    </picture>
+                    <span class="post-card__date">12 декабря</span>
+                    <p class="post-card__text">События жизненного цикла ReactJS</p>
+                </div>
+                <div class="post-card">
+                    <picture>
+                        <source srcset="/img/post-2.webp" type="image/webp">
+                        <source srcset="/img/post-2.png" type="image/jpg">
+                        <img src="/img/post-2.png" loading="lazy" decoding="async" class="post-card__img">
+                    </picture>
+                    <span class="post-card__date">10 декабря</span>
+                    <p class="post-card__text">CSS Grids. Полное руководство</p>
+                </div>
+                <div class="post-card">
+                    <picture>
+                        <source srcset="/img/post-3.webp" type="image/webp">
+                        <source srcset="/img/post-3.png" type="image/jpg">
+                        <img src="/img/post-3.png" loading="lazy" decoding="async" class="post-card__img">
+                    </picture>
+                    <span class="post-card__date">5 декабря</span>
+                    <p class="post-card__text">Асинхронность в JavaScript</p>
+                </div>
+            </div>
+            <div class="bxslider">
+                <div class="post-card">
+                    
+                    <img class="post-card__img" src="/img/post-1.png">
+                    <span class="post-card__date">12 декабря</span>
+                    <p class="post-card__text">События жизненного цикла ReactJS</p>
+                </div>
+                <div class="post-card">
+                    <img class="post-card__img" src="/img/post-2.png">
+                    <span class="post-card__date">10 декабря</span>
+                    <p class="post-card__text">CSS Grids. Полное руководство</p>
+                </div>
+                <div class="post-card">
+                    <img class="post-card__img" src="/img/post-3.png">
+                    <span class="post-card__date">5 декабря</span>
+                    <p class="post-card__text">Асинхронность в JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <script src="js/main.js"></script>
+</body>
+</html>
